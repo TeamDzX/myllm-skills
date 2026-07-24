@@ -2,6 +2,7 @@
 name: flashcards
 description: Turn notes or a topic into a set of question/answer study flashcards. Use when the user wants to revise or memorise material.
 license: MIT
+uses: create-flashcard
 ---
 
 # Study flashcards
@@ -21,3 +22,7 @@ Rules:
 - Keep answers short enough to memorise.
 - If the source is thin, make fewer high-quality cards rather than padding.
 - End with nothing but the cards.
+
+If the user has an app that provides the `create-flashcard` capability (you'll be
+told the exact tool name when this skill loads), offer to add the cards straight
+into it instead of only printing them — one tool call per card.
